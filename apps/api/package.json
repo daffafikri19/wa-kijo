@@ -7,9 +7,9 @@
     "node": ">=22.0.0"
   },
   "scripts": {
-    "dev": "pnpm --filter @wa-kijo/shared --filter @wa-kijo/db build && dotenv -e ../../.env -- nest start --watch --builder swc",
+    "dev": "node api.js && pnpm --filter @wa-kijo/shared --filter @wa-kijo/db build && dotenv -e ../../.env -- nest start --watch --builder swc",
     "build": "nest build",
-    "start": "node dist/main.js",
+    "start": "node api.js && node dist/main.js",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",

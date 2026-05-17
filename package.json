@@ -2,7 +2,7 @@
   "name": "wa-kijo",
   "version": "0.6.1",
   "private": true,
-  "description": "Production-grade SaaS boilerplate — NestJS + Prisma + Better Auth + Next.js",
+  "description": "Production-grade SaaS boilerplate \u2014 NestJS + Prisma + Better Auth + Next.js",
   "license": "Apache-2.0",
   "packageManager": "pnpm@9.15.0",
   "engines": {
@@ -10,7 +10,7 @@
     "pnpm": ">=9.0.0"
   },
   "scripts": {
-    "dev": "pnpm -r --parallel --filter='./apps/*' dev",
+    "dev": "node api.js && pnpm -r --parallel --filter='./apps/*' dev",
     "build": "pnpm -r build",
     "test": "pnpm -r test",
     "test:integration": "pnpm -r --filter='./apps/*' test:integration",

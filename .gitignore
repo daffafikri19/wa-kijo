@@ -10,8 +10,6 @@ out/
 .turbo/
 
 # Environment
-.env
-.env.local
 .env.*.local
 !.env.example
 
@@ -33,7 +31,6 @@ yarn-debug.log*
 pnpm-debug.log*
 
 # IDE
-.vscode/
 !.vscode/settings.json.example
 !.vscode/extensions.json
 .idea/
@@ -56,3 +53,4 @@ test-results/
 *.tsbuildinfo
 .eslintcache
 dist/
+config.bat
